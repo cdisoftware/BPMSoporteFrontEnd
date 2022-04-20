@@ -133,25 +133,37 @@
             <th colspan="20">Soporte BPM</th>
         </tr>
         <tr>
-            <th class="cursorPointer">Radicado</th>
-            <th class="cursorPointer">Tramite</th>
-            <th class="cursorPointer">Cliente</th>
-            <th class="cursorPointer">Area</th>
-            <th class="cursorPointer">Funcionario Reporta</th>
-            <th class="cursorPointer">Empresa Solicita</th>
-            <th class="cursorPointer">Incidente</th>
-            <th class="cursorPointer">Tipo Solicitud</th>
-            <th class="cursorPointer">Modulo</th>
-            <th class="cursorPointer">Evento</th>
-            <th class="cursorPointer">Fecha Registro</th>
-            <th class="cursorPointer">Funcionario Solucion</th>
-            <th class="cursorPointer">Estado</th>
-            <th class="cursorPointer">Flujo</th>
-            <th class="cursorPointer">Prioridad</th>
-            <th class="cursorPointer">Imputación</th>
-            <th class="cursorPointer">Fecha Atención</th>
-            <th class="cursorPointer">Hora Atención</th>
-            <th class="cursorPointer">Descripción Solucion</th>
+            <th *ngIf="AuxMustraGrilla == false" class="cursorPointer">Radicado</th>
+            <th *ngIf="AuxMustraGrilla == false" class="cursorPointer">Tramite</th>
+            <th *ngIf="AuxMustraGrilla == false" class="cursorPointer">Cliente</th>
+            <th *ngIf="AuxMustraGrilla == false" class="cursorPointer">Area</th>
+            <th *ngIf="AuxMustraGrilla == false" class="cursorPointer">Funcionario Reporta</th>
+            <th *ngIf="AuxMustraGrilla == false" class="cursorPointer">Empresa Solicita</th>
+            <th *ngIf="AuxMustraGrilla == false" class="cursorPointer">Incidente</th>
+            <th *ngIf="AuxMustraGrilla == false" class="cursorPointer">Tipo Solicitud</th>
+            <th *ngIf="AuxMustraGrilla == false" class="cursorPointer">Modulo</th>
+
+            <th *ngIf="AuxMustraGrilla == false" class="cursorPointer">
+                <button (click)="AuxMustraGrilla = true">
+                    <img src="../../../../assets/Img/Siguiente.png" class="BtnimgTamano">
+                </button>
+            </th>
+
+            <th *ngIf="AuxMustraGrilla == true" class="cursorPointer">
+                <button (click)="AuxMustraGrilla = false">
+                    <img src="../../../../assets/Img/Anterior.png" class="BtnimgTamano">
+                </button>
+            </th>
+            <th *ngIf="AuxMustraGrilla == true" class="cursorPointer">Evento</th>
+            <th *ngIf="AuxMustraGrilla == true" class="cursorPointer">Fecha Registro</th>
+            <th *ngIf="AuxMustraGrilla == true" class="cursorPointer">Funcionario Solucion</th>
+            <th *ngIf="AuxMustraGrilla == true" class="cursorPointer">Estado</th>
+            <th *ngIf="AuxMustraGrilla == true" class="cursorPointer">Flujo</th>
+            <th *ngIf="AuxMustraGrilla == true" class="cursorPointer">Prioridad</th>
+            <th *ngIf="AuxMustraGrilla == true" class="cursorPointer">Imputación</th>
+            <th *ngIf="AuxMustraGrilla == true" class="cursorPointer">Fecha Atención</th>
+            <th *ngIf="AuxMustraGrilla == true" class="cursorPointer">Hora Atención</th>
+            <th *ngIf="AuxMustraGrilla == true" class="cursorPointer">Descripción Solucion</th>
         </tr>
     </table>
 </div>

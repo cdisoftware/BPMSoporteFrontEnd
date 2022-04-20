@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConsultaSoporteBPMComponent implements OnInit {
 
+  //VariablesGrilla
+  AuxMustraGrilla: boolean = false;
   constructor() { }
 
   ngOnInit(): void {

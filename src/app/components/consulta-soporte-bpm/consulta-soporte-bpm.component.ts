@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
+import * as sql from "mssql";
 
 @Component({
   selector: 'app-consulta-soporte-bpm',
@@ -13,5 +14,7 @@ export class ConsultaSoporteBPMComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  
 
 }

@@ -5,10 +5,9 @@
     <div class="row mt-3">
         <!--Ayuda Cliente-->
         <div class="col-sm-6 m-0 mb-3 displayFlexbetween">
-            <input type="text" class="form-control" placeholder="Cliente" title="Cliente">
-            <button id="pass" class="bot BtnimgTamano mld">
-                <img src="../../../../assets/Img/buscar.png" class="BtnimgTamano">
-            </button>
+            <select class="form-select" title="Seleccionar Cliente">
+                <option value="0" selected>Seleccione Cliente</option>
+            </select>
         </div>
         <!--Fin ayuda-->
 
@@ -164,6 +163,30 @@
             <th *ngIf="AuxMustraGrilla == true" class="cursorPointer">Fecha Atención</th>
             <th *ngIf="AuxMustraGrilla == true" class="cursorPointer">Hora Atención</th>
             <th *ngIf="AuxMustraGrilla == true" class="cursorPointer">Descripción Solucion</th>
+        </tr>
+        <tr *ngFor="let ArGrilla of ArregloGrilla">
+            <td *ngIf="AuxMustraGrilla == false">{{ArGrilla.Ticket}}</td>
+            <td *ngIf="AuxMustraGrilla == false">{{ArGrilla.Tramite}}</td>
+            <td *ngIf="AuxMustraGrilla == false">{{ArGrilla.NOMBRECLIENTE}}</td>
+            <td *ngIf="AuxMustraGrilla == false">{{ArGrilla.AREA}}</td>
+            <td *ngIf="AuxMustraGrilla == false" style="white-space: nowrap;">{{ArGrilla.FuncionarioReporta}}</td>
+            <td *ngIf="AuxMustraGrilla == false">{{ArGrilla.NOMBRECLIENTE}}</td>
+            <td *ngIf="AuxMustraGrilla == false">{{ArGrilla.INCIDENTE}}</td>
+            <td *ngIf="AuxMustraGrilla == false">{{ArGrilla.TIPOSOLICITUD}}</td>
+            <td *ngIf="AuxMustraGrilla == false">{{ArGrilla.MODULO}}</td>
+
+
+            <td></td>
+            <td *ngIf="AuxMustraGrilla == true">{{ArGrilla.EVENTO}}</td>
+            <td *ngIf="AuxMustraGrilla == true">{{ArGrilla.FECHAREGISTRO}}</td>
+            <td *ngIf="AuxMustraGrilla == true">{{ArGrilla.FUNCIONARIOASIGNADOSOLUCION}}</td>
+            <td *ngIf="AuxMustraGrilla == true">{{ArGrilla.ESTADO}}</td>
+            <td *ngIf="AuxMustraGrilla == true">{{ArGrilla.FLUJO}}</td>
+            <td *ngIf="AuxMustraGrilla == true">{{ArGrilla.PRIORIDAD}}</td>
+            <td *ngIf="AuxMustraGrilla == true">{{ArGrilla.IMPUTACION}}</td>
+            <td *ngIf="AuxMustraGrilla == true">{{ArGrilla.FECHAATENCION}}</td>
+            <td *ngIf="AuxMustraGrilla == true">{{ArGrilla.HORAATENCION}}</td>
+            <td *ngIf="AuxMustraGrilla == true">{{ArGrilla.SOLUCIONINCIDENTEI}}</td>
         </tr>
     </table>
 </div>

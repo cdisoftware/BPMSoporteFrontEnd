@@ -5,7 +5,8 @@
     <div class="row mt-3">
         <!--Ayuda Cliente-->
         <div class="col-sm-6 m-0 mb-3 displayFlexbetween">
-            <select class="form-select" title="Seleccionar Cliente" [(ngModel)]="NombreCliente" (change)='Grilla(FuncionarioReportaValue.value)'>
+            <select class="form-select" title="Seleccionar Cliente" [(ngModel)]="NombreCliente"
+                (change)='Grilla(FuncionarioReportaValue.value)'>
                 <option value="0" selected>Seleccione Cliente</option>
                 <option value="{{arRespu.NOMBRECLIENTE}}" *ngFor="let arRespu of ArrSeleccionarCliente">
                     {{arRespu.NOMBRECLIENTE}}</option>
@@ -57,7 +58,7 @@
     <!--Fecha reguistro-->
     <div class="col-sm-3 m-0 mb-3 displayFlexbetween">
         <input type="date" class="form-control" title="Fecha registro final" [(ngModel)]="FechaRegistroFinal"
-        (change)='Grilla(FuncionarioReportaValue.value)'>
+            (change)='Grilla(FuncionarioReportaValue.value)'>
     </div>
     <!--Fin ayuda-->
 
@@ -65,13 +66,13 @@
     <!--Fecha atencion-->
     <div class="col-sm-3 m-0 mb-3 displayFlexbetween">
         <input type="date" class="form-control" title="Fecha atencion inicial" [(ngModel)]="FechaAtencionInicial"
-        (change)='Grilla(FuncionarioReportaValue.value)'>
+            (change)='Grilla(FuncionarioReportaValue.value)'>
     </div>
     <!--Fin ayuda-->
     <!--Fecha atencion-->
     <div class="col-sm-3 m-0 mb-3 displayFlexbetween">
         <input type="date" class="form-control" title="Fecha atencion final" [(ngModel)]="FechaAtencionFinal"
-        (change)='Grilla(FuncionarioReportaValue.value)'>
+            (change)='Grilla(FuncionarioReportaValue.value)'>
     </div>
     <!--Fin ayuda-->
 </div>
@@ -79,7 +80,7 @@
     <!--Tipo lista-->
     <div class="col-sm-3 m-0 mb-3 ">
         <select class="form-select" title="Seleccionar Prioridad" [(ngModel)]="IdCDPRIORIDAD"
-        (change)='Grilla(FuncionarioReportaValue.value)'>
+            (change)='Grilla(FuncionarioReportaValue.value)'>
             <option value="0" selected>Seleccione Prioridad</option>
             <option value="{{arRespu.CDPRIORIDAD}}" *ngFor="let arRespu of ArrPrioridad">{{arRespu.PRIORIDAD}}</option>
         </select>
@@ -87,7 +88,8 @@
     <!--Fin Tipo lista-->
     <!--Tipo lista-->
     <div class="col-sm-3 m-0 mb-3 ">
-        <select class="form-select" title="Seleccionar Evento" [(ngModel)]="IdCdEvento">
+        <select class="form-select" title="Seleccionar Evento" [(ngModel)]="IdCdEvento"
+        (change)='Grilla(FuncionarioReportaValue.value)'>
             <option value="0" selected>Seleccione Evento</option>
             <option value="{{arRespu.CDEVENTO}}" *ngFor="let arRespu of ArrEventos">{{arRespu.EVENTO}}</option>
         </select>
@@ -99,7 +101,7 @@
     <!--Tipo lista-->
     <div class="col-sm-3 m-0 mb-3 ">
         <select class="form-select" title="Seleccionar Imputación" [(ngModel)]="IdCDIMPUTACION"
-        (change)='Grilla(FuncionarioReportaValue.value)'>
+            (change)='Grilla(FuncionarioReportaValue.value)'>
             <option value="0" selected>Seleccione Imputación</option>
             <option value="{{arRespu.CDIMPUTACION}}" *ngFor="let arRespu of ArrImputacion">{{arRespu.IMPUTACION}}
             </option>
@@ -108,7 +110,8 @@
     <!--Fin Tipo lista-->
     <!--Ayuda Trámite-->
     <div class="col-sm-3 m-0 mb-3 displayFlexbetween">
-        <input type="text" class="form-control" placeholder="Trámite" title="Trámite" [(ngModel)]="Tramite" (keyup)="Grilla(FuncionarioReportaValue.value)">
+        <input type="text" class="form-control" placeholder="Trámite" title="Trámite" [(ngModel)]="Tramite"
+            (keyup)="Grilla(FuncionarioReportaValue.value)">
     </div>
     <!--Fin ayuda-->
 </div>
@@ -116,7 +119,7 @@
     <!--Tipo lista-->
     <div class="col-sm-3 m-0 mb-3 ">
         <select class="form-select" title="Seleccionar Estado" [(ngModel)]="IdCdEstado"
-        (change)='Grilla(FuncionarioReportaValue.value)'>
+            (change)='Grilla(FuncionarioReportaValue.value)'>
             <option value="0" selected>Seleccione Estado</option>
             <option value="{{arRespu.CDESTADO}}" *ngFor="let arRespu of ArrEstado">{{arRespu.ESTADO}}</option>
         </select>
@@ -125,7 +128,7 @@
     <!--Tipo lista-->
     <div class="col-sm-3 m-0 mb-3 ">
         <select class="form-select" title="Seleccionar Modulo" [(ngModel)]="IdCdModulo"
-        (change)='Grilla(FuncionarioReportaValue.value)'>
+            (change)='Grilla(FuncionarioReportaValue.value)'>
             <option value="0" selected>Seleccione Modulo</option>
             <option value="{{arRespu.CDMODULO}}" *ngFor="let arRespu of ArrModulo">{{arRespu.MODULO}}</option>
         </select>
@@ -137,7 +140,7 @@
     <!--Tipo lista-->
     <div class="col-sm-3 m-0 mb-3 ">
         <select class="form-select" title="Seleccionar Tipo Solicitud" [(ngModel)]="IdCDTPOSOL"
-        (change)='Grilla(FuncionarioReportaValue.value)'>
+            (change)='Grilla(FuncionarioReportaValue.value)'>
             <option value="0" selected>Seleccione Tipo Solicitud</option>
             <option value="{{arRespu.CDTPOSOL}}" *ngFor="let arRespu of ArrSolicitud">{{arRespu.TIPOSOLICITUD}}</option>
         </select>
@@ -150,19 +153,25 @@
     </div>
     <!--Fin ayuda-->
 </div>
+
+<div class="row col-0 mt-2" style="justify-content: center;">
+    <button type="button" class="btn col-2 btn-outline-dark" (click)="Limpiar()">Limpiar
+        <img src="../../../../assets/Img/Limpiar.png" class="BtnimgTamano">
+    </button>
+</div>
 <!--Grilla-->
 <div class="col-sm-12 mt-5">
-    <table class="table table-bordered text-center">
+    <table class="table-bordered text-center">
         <tr>
             <th colspan="5" style="text-align: right;">Soporte BPM</th>
             <th colspan="3">
-                <p  style="text-align: right;">NUMERO DE RESULTADOS PARA VER: </p>
+                <p style="text-align: right;">NUMERO DE RESULTADOS PARA VER: </p>
             </th>
             <th>
                 <div class="row" style="float: right;">
                     <div class="col-sm-12">
-                        <select class="form-select" style="width: 100px;" title="Numero de resultados a mostrar" [(ngModel)]="NumeroResultados"
-                        (change)='Grilla(FuncionarioReportaValue.value)'>
+                        <select class="form-select" style="width: 100px;" title="Numero de resultados a mostrar"
+                            [(ngModel)]="NumeroResultados" (change)='Grilla(FuncionarioReportaValue.value)'>
                             <option value="10" selected>10</option>
                             <option value="20">20</option>
                             <option value="30">30</option>

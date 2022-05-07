@@ -264,6 +264,7 @@ export class ConsultaSoporteBPMComponent implements OnInit {
   seleccionarFuncionarioSoluciona(Arr: any) {
     this.modalFuncionarioSoluciona.hide();
     this.FuncionarioSoluciona = Arr.NOMBREFUNCIONARIO;
+    this.Grilla(this.FuncionarioReporta);
   }
 
 
@@ -360,4 +361,24 @@ export class ConsultaSoporteBPMComponent implements OnInit {
 
   //Radicado
   Radicado: string;
+
+  Limpiar(){
+    this.NombreCliente = '0';
+    this.EmpresaSolicitante = '';
+    this.FuncionarioReporta = '';
+    this.FuncionarioSoluciona = '';
+    this.FechaRegistroInicial = '0';
+    this.FechaRegistroFinal = '0';
+    this.FechaAtencionInicial = '0';
+    this.FechaAtencionFinal = '0';
+    this.IdCDPRIORIDAD = '0';
+    this.IdCdEvento = '0';
+    this.IdCDIMPUTACION = '0';
+    this.Tramite = '';
+    this.IdCdEstado = '0';
+    this.IdCdModulo = '0';
+    this.IdCDTPOSOL = '0';
+    this.Radicado = '';
+    this.Grilla('0');
+  }
 }

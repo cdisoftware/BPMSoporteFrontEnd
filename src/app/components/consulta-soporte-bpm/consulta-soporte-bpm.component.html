@@ -89,7 +89,7 @@
     <!--Tipo lista-->
     <div class="col-sm-3 m-0 mb-3 ">
         <select class="form-select" title="Seleccionar Evento" [(ngModel)]="IdCdEvento"
-        (change)='Grilla(FuncionarioReportaValue.value)'>
+            (change)='Grilla(FuncionarioReportaValue.value)'>
             <option value="0" selected>Seleccione Evento</option>
             <option value="{{arRespu.CDEVENTO}}" *ngFor="let arRespu of ArrEventos">{{arRespu.EVENTO}}</option>
         </select>
@@ -253,6 +253,14 @@
     </div>
     <div class="modaBody">
         <div class="col-sm-12 mt-3 row displayCenter">
+            <div class="col-sm-11 mb-2">
+                <input type="text" class="form-control" [(ngModel)]="EmpresaSolicitante" title="Empresa solicitante">
+            </div>
+            <div class="col-sm-1">
+                <button id="pass" class="bot BtnimgTamano mld" (click)="ListaEmpresaSolicitante(EmpresaSolicitante)">
+                    <img src="../../../../assets/Img/buscar.png" class="BtnimgTamano">
+                </button>
+            </div>
             <li class="row col-sm-12 espacioul" style="width: 100%"
                 *ngFor="let ArRueda of ArregloListaEmpresaSolicitante">
                 <div class="col-11">

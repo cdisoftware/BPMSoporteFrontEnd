@@ -147,8 +147,6 @@ export class ConsultaSoporteBPMComponent implements OnInit {
       CDMODULO: IdCdModulo
     }
     this.Servicios.consultaSoporteBpm(ticket, NombreCliente, Tramite, FuncionarioReporta, CdEstado, IdCdEvento, IdCDTPOSOL, IdCDPRIORIDAD, IdCDIMPUTACION, FechaRegistroInicial, FechaRegistroFinal, FechaAtencionInicial, FechaAtencionFinal, FuncionarioSoluciona, this.NumeroResultados, consulta).subscribe(respu => {
-      console.log(respu)
-      console.log(ticket, NombreCliente, Tramite, FuncionarioReporta, CdEstado, IdCdEvento, IdCDTPOSOL, IdCDPRIORIDAD, IdCDIMPUTACION, FechaRegistroInicial, FechaRegistroFinal, FechaAtencionInicial, FechaAtencionFinal, FuncionarioSoluciona, this.NumeroResultados, consulta)
       if (respu.length > 0) {
         this.ArregloGrilla = respu;
       } else {

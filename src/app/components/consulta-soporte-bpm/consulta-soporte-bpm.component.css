@@ -1,3 +1,9 @@
 .Negrita{
     font-weight: bolder;
 }
+.LineaTabla td{
+    border: 1px solid #A7A1A0;
+}
+.LineaTabla th{
+    border: 1px solid #A7A1A0;
+}

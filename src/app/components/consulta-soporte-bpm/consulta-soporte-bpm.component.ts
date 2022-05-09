@@ -499,7 +499,7 @@ export class ConsultaSoporteBPMComponent implements OnInit {
       RAZONSOCIAL: EmpresaSolicitante,
       CDMODULO: IdCdModulo
     }
-    this.Servicios.consultaSoporteBpm(ticket, NombreCliente, Tramite, FuncionarioReporta, CdEstado, IdCdEvento, IdCDTPOSOL, IdCDPRIORIDAD, IdCDIMPUTACION, FechaRegistroInicial, FechaRegistroFinal, FechaAtencionInicial, FechaAtencionFinal, FuncionarioSoluciona, this.NumeroResultados, consulta).subscribe(respu => {
+    this.Servicios.consultaSoporteBpm(ticket, NombreCliente, Tramite, FuncionarioReporta, CdEstado, IdCdEvento, IdCDTPOSOL, IdCDPRIORIDAD, IdCDIMPUTACION, FechaRegistroInicial, FechaRegistroFinal, FechaAtencionInicial, FechaAtencionFinal, FuncionarioSoluciona, '0', consulta).subscribe(respu => {
       if (respu.length > 0) {
         let workbook = new Workbook();
         let worksheet = workbook.addWorksheet("ConsultaSoporte");

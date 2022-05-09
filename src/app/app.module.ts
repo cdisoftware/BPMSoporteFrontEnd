@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { CommonModule, HashLocationStrategy, LocationStrategy  } from "@angular/common";
 
 
 import { ConsultaSoporteBPMComponent } from './components/consulta-soporte-bpm/consulta-soporte-bpm.component';
@@ -21,7 +22,9 @@ import { ConsultaSoporteBPMComponent } from './components/consulta-soporte-bpm/c
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    {provide : LocationStrategy , useClass: HashLocationStrategy}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

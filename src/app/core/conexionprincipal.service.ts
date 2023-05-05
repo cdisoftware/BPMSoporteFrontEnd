@@ -11,7 +11,7 @@ export class ConexionprincipalService {
     //ambiente de trabajo 1 desarrollo 2 produccion
     ambientedetrabajo: string = '2';
 
-    public url_ProduccionCDI = 'http://192.168.3.186:1004/BPMSoporteService/';
+    public url_ProduccionCDI = 'http://190.147.38.91:1004/BPMSoporteService/';
 
 
     SeleccionAmbiente() {

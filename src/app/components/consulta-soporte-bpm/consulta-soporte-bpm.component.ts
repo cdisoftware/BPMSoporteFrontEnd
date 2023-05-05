@@ -533,7 +533,7 @@ export class ConsultaSoporteBPMComponent implements OnInit {
 
         let fname = "Consulta soporte";
 
-        workbook.xlsx.writeBuffer().then((data) => {
+        workbook.xlsx.writeBuffer().then((data:any) => {
           let blob = new Blob([data], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
           saveAs(blob, fname + '.xlsx');
         });

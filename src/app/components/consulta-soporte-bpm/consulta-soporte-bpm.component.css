@@ -1,9 +1,30 @@
-.Negrita{
+.Negrita {
     font-weight: bolder;
 }
-.LineaTabla td{
+
+.LineaTabla td {
     border: 1px solid #A7A1A0;
 }
-.LineaTabla th{
+
+.LineaTabla th {
     border: 1px solid #A7A1A0;
+    color: white;
+}
+
+.BacgroundColor {
+    background: rgb(4,84,148);
+background: linear-gradient(90deg, rgba(4,84,148,1) 0%, rgba(255,255,255,0.6362920168067228) 0%, rgba(4,84,148,1) 72%);
+}
+.Header{
+    height: 51px;
+}
+.imgLogo{
+    height: auto;
+    width: auto;
+}
+.texto{
+    text-align: end;
+    color: white;
+    padding: 5px;
+    margin: 5px;
 }

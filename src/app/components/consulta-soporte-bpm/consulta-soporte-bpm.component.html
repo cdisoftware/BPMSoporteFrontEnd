@@ -17,7 +17,7 @@
             <select class="form-select" title="Seleccionar Cliente" [(ngModel)]="NombreCliente"
                 (change)='Grilla(FuncionarioReportaValue.value)'>
                 <option value="0" selected>Seleccione Cliente</option>
-                <option value="{{arRespu.NOMBRECLIENTE}}" *ngFor="let arRespu of ArrSeleccionarCliente">
+                <option value="{{arRespu.Id}}" *ngFor="let arRespu of ArrSeleccionarCliente">
                     {{arRespu.NOMBRECLIENTE}}</option>
             </select>
         </div>
